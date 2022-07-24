@@ -33,3 +33,5 @@ INSERT INTO AddressBook Values
 UPDATE AddressBook
 set Address = 'nagpur', City = 'nagpur' where FirstName = 'Prateeksha' ;
 
+--UC5-Delete person using persons name--
+DELETE AddressBook WHERE FirstName = 'Vasanth'
