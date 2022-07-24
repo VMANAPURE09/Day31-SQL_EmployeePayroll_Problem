@@ -20,3 +20,13 @@ Email Varchar(20)
 
 --To View the AddressBook Table
 SELECT * FROM AddressBook
+
+--UC3--
+--Insert COntacts into AddressBook
+INSERT INTO AddressBook Values 
+('Vaibhav','Manapure','Wardha','Nagpur', 'Maharashtra','442305','9764510067','manapure.vaibhav542@gmail.com'),
+('sanjay','walke','Gondia','Nagpur', 'Maharashtra','581336','8945231256','sanjaywakle@gmail.com'),
+('Vasanth','Pai','Sirsi','Sirsi', 'Karnataka','581336','9482615957','vasanthpai@gmail.com'),
+('Git','Pai','Sirsi','amravati', 'Maharashtra','581336','6284519537','gitpai@gmail.com');
+
+rollback AddressBook Values
