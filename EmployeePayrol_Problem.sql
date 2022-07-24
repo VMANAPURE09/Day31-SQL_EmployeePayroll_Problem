@@ -25,7 +25,7 @@ SELECT * FROM AddressBook
 --Insert COntacts into AddressBook
 INSERT INTO AddressBook Values 
 ('Vaibhav','Manapure','Wardha','Nagpur', 'Maharashtra','442305','9764510067','manapure.vaibhav542@gmail.com'),
-('sanjay','walke','Gondia','Nagpur', 'Maharashtra','581336','8945231256','sanjaywakle@gmail.com'),
+('sanjay','walke','Gondia','Nagpur', 'Maharashtra','581336','8945231256','sanjaywakle@gmail.com');
 ('Vasanth','Pai','Sirsi','Sirsi', 'Karnataka','581336','9482615957','vasanthpai@gmail.com'),
 ('Git','Pai','Sirsi','amravati', 'Maharashtra','581336','6284519537','gitpai@gmail.com');
 
@@ -35,3 +35,6 @@ set Address = 'nagpur', City = 'nagpur' where FirstName = 'Prateeksha' ;
 
 --UC5-Delete person using persons name--
 DELETE AddressBook WHERE FirstName = 'Vasanth'
+
+--Retrieve the persons city / State by using persons name
+Select City, State from AddressBook where FirstName = 'vaibhav'
