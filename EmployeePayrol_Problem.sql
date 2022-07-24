@@ -31,7 +31,7 @@ INSERT INTO AddressBook Values
 
 --UC4-Edit the existing data in the table
 UPDATE AddressBook
-set Address = 'nagpur', City = 'nagpur' where FirstName = 'Prateeksha' ;
+set Address = 'nagpur', City = 'nagpur' where FirstName = 'Abhijeet' ;
 
 --UC5-Delete person using persons name--
 DELETE AddressBook WHERE FirstName = 'Vasanth'
@@ -42,3 +42,11 @@ Select City, State from AddressBook where FirstName = 'vaibhav'
 --UC7-Size of Addressbook by City / State
 select COUNT(City) FROM AddressBook
 select COUNT(State) FROM AddressBook
+
+INSERT INTO AddressBook Values
+('Sita','Sai','Shegaon','jalgaon', 'Maharshtra','443207','9884519537','sitasai@gmail.com'),
+('Navnath','korde','kolhapur','Kolhapur', 'Maharashtra','581441','6824531296','navnath@gmail.com'),
+('Abhijeet','Kamath','Sagar','Sagar', 'Karnataka','581477','9173842682','abhijeet@gmail.com');
+
+--UC8-Sort Persons Name Alphabetically for a given city
+SELECT * FROM AddressBook WHERE City = 'nagpur' ORDER by FirstName ASC
