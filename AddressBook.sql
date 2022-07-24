@@ -90,3 +90,6 @@ update AddressBook SET AddressBookID = 2 where FirstName = 'Abhijeet'
 
 --UC12--
 --E-R Diagram
+
+--UC13-Get number of contact persons i.e count by type
+select AddressBookID, COUNT (AddressBookID) from AddressBook group by AddressBookID 
