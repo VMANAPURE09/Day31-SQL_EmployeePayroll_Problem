@@ -92,4 +92,4 @@ update AddressBook SET AddressBookID = 2 where FirstName = 'Abhijeet'
 --E-R Diagram
 
 --UC13-Get number of contact persons i.e count by type
-select AddressBookID, COUNT (AddressBookID) from AddressBook group by AddressBookID 
+select AddressBookID, COUNT (AddressBookID) From AddressBook group by  AddressBookID 
