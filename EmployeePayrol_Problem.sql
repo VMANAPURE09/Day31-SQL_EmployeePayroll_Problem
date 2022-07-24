@@ -29,4 +29,7 @@ INSERT INTO AddressBook Values
 ('Vasanth','Pai','Sirsi','Sirsi', 'Karnataka','581336','9482615957','vasanthpai@gmail.com'),
 ('Git','Pai','Sirsi','amravati', 'Maharashtra','581336','6284519537','gitpai@gmail.com');
 
-rollback AddressBook Values
+--UC4-Edit the existing data in the table
+UPDATE AddressBook
+set Address = 'nagpur', City = 'nagpur' where FirstName = 'Prateeksha' ;
+
